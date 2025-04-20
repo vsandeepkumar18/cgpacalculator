@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Student Grade and CGPA Calculator - Calculate GPA, CGPA, Percentage, and more." />
+  <meta name="keywords" content="GPA, CGPA, Grade Calculator, Student, Calculator, Percentage, Average" />
+  <meta property="og:title" content="Student Grade and CGPA Calculator" />
+  <meta property="og:description" content="Calculate GPA, CGPA, Percentage, and Average Marks easily." />
+  <meta property="og:image" content="your-image-url.jpg" />
+  <meta property="og:url" content="your-webpage-url.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Student Grade and CGPA Calculator" />
+
+  <title>Student Grade and CGPA Calculator</title>
+  <!-- <link rel="icon" href="favicon.ico"> -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DVW07S8MB2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  
+  gtag('config', 'G-DVW07S8MB2');
+</script>
+
+<body>
+   
+  <header>
+    <span>Student Grade and CGPA Calculator</span>
+  </header>
+
+  <h1>Student Grade and CGPA Calculator</h1>
+
+  <main>
+    <div class="container">
+      <!-- CGPA Calculation Section -->
+      <div class="section" id="cgpa-section">
+        <h2>CGPA Calculation</h2>
+        <div class="input-container">
+          <label for="num-subjects">Enter number of subjects:</label>
+          <input type="number" id="num-subjects" placeholder="For example: 5" />
+          <span class="tooltip">Enter the number of subjects you want to calculate for.</span>
+        </div>
+        <div id="cgpa-subjects-inputs"></div>
+        <button onclick="generateCGPAInputs()">Generate Inputs</button>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+        <div class="result" id="cgpa-result">
+          <span>CGPA: </span><span id="cgpa-output">0</span>
+        </div>
+      </div>
+
+      <!-- GPA Calculation Section -->
+      <div class="section" id="gpa-section">
+        <h2>GPA Calculation</h2>
+        <div class="input-container">
+          <label for="gpa-subjects">Enter grades (A, B, C, etc.):</label>
+          <input type="text" id="gpa-subjects" placeholder="Grades separated by commas (e.g., A, B, C)" />
+          <span class="tooltip">Enter the grades of your subjects, separated by commas.</span>
+        </div>
+        <button onclick="calculateGPA()">Calculate GPA</button>
+
+        <div class="result" id="gpa-result">
+          <span>GPA: </span><span id="gpa-output">0</span>
+        </div>
+      </div>
+
+      <!-- Percentage Calculation Section -->
+      <div class="section" id="percentage-section">
+        <h2>Percentage Calculation</h2>
+        <div class="input-container">
+          <label for="marks-obtained">Enter total marks obtained:</label>
+          <input type="number" id="marks-obtained" placeholder="For example: 450" />
+          <span class="tooltip">Enter the total marks you obtained.</span>
+        </div>
+
+        <div class="input-container">
+          <label for="total-marks">Enter total maximum marks:</label>
+          <input type="number" id="total-marks" placeholder="For example: 500" />
+          <span class="tooltip">Enter the maximum possible marks.</span>
+        </div>
+
+        <button onclick="calculatePercentage()">Calculate Percentage</button>
+
+        <div class="result" id="percentage-result">
+          <span>Percentage: </span><span id="percentage-output">0</span>
+        </div>
+      </div>
+
+      <!-- Average Calculation Section -->
+      <div class="section" id="average-section">
+        <h2>Average Marks Calculation</h2>
+        <div class="input-container">
+          <label for="total-marks-obtained">Enter total marks obtained in each subject (separated by commas):</label>
+          <input type="text" id="total-marks-obtained" placeholder="For example: 85, 90, 78, 88" />
+          <span class="tooltip">Enter the marks you obtained in each subject, separated by commas.</span>
+        </div>
+
+        <button onclick="calculateAverage()">Calculate Average</button>
+
+        <div class="result" id="average-result">
+          <span>Average Marks: </span><span id="average-output">0</span>
+        </div>
+      </div>
+
+      <!-- Reset Button -->
+      <button onclick="resetFields()">Reset</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Grade and CGPA Calculator</p>
+    <!-- <p>
+      <a href="#">Home</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a> -->
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

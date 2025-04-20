@@ -1,0 +1,147 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid #2980b9;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #2C3E50;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  position: relative;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.result {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  top: -30px;
+  left: 0;
+  display: none;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-container:hover .tooltip {
+  display: block;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
